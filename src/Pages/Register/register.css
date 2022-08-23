@@ -1,0 +1,87 @@
+.register{
+    display: flex;
+}
+
+.register__left {
+    background-color: #C9AC8C;
+    width: 576px;
+    height: 700px;
+}
+
+.register__img{
+    margin-top: 100px ;
+    margin-left: 38px;
+}
+
+.register__right{
+    margin-left: 108px;
+}
+
+.register h3 {
+    margin: 0;
+    padding: 0;
+    margin-top: 75px;
+    font-family: 'Arial Black';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 51px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+.register__right p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    color: #000000;
+}
+
+.register__right a {
+    text-decoration: none;
+    color: #549FF9;
+}
+
+.register__form input{
+    display: block;
+    width: 330px;
+    height: 46px;
+    background: #FFFFFF;
+    border: 1px solid #B4B4BB;
+    border-radius: 10px;
+    margin-top: 16px;
+    outline: none;
+}
+
+.register__form input::placeholder{
+    padding-left: 29px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #AAAAAA;
+}
+
+.register__form button {
+    border: none;
+    width: 328px;
+    height: 46px;
+    background: #152540;
+    border-radius: 99px;
+    border: 2px solid transparent;
+    color: white;
+    font-family: 'Red Hat Display';
+    line-height: 36px;
+    margin-top: 39px;
+}
+
+.register__form button:hover{
+    background-color: transparent;
+    border: 2px solid #152540;
+    color: #152540;
+    transition: all 0.4s;
+}
