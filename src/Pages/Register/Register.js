@@ -3,9 +3,12 @@ import { useRef } from "react"
 import { useNavigate } from "react-router-dom"
 import { Link } from "react-router-dom"
 import RegisterIcon from "../../assets/img/register-icon.svg"
+import { useContext } from "react"
+import { useAuth } from "../../hook/hook"
 import "./register.css"
 
 export const Register = () => {
+    const { setToken } = useAuth()
 
     const elUserName = useRef("")
     const elLastName = useRef("")
@@ -25,12 +28,8 @@ export const Register = () => {
         formdata.append("password", elPassword.current.value)
 
         axios
-            .post("https://book-service-layer.herokuapp.com/user/register/", formdata)
-            .then((data) => {
-                if (data) {
-                    navigate("/")
-                }
-            })
+            .post("https://book-service-layer.herokuapp.com/user/register", formdata)
+            .then((data) => setToken(data.data))
             .catch(err => console.log(err))
     }
     return (
