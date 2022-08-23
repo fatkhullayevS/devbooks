@@ -3,7 +3,6 @@ import { useRef } from "react"
 import { useNavigate } from "react-router-dom"
 import { Link } from "react-router-dom"
 import RegisterIcon from "../../assets/img/register-icon.svg"
-import { useContext } from "react"
 import { useAuth } from "../../hook/hook"
 import "./register.css"
 
@@ -28,10 +27,13 @@ export const Register = () => {
         formdata.append("password", elPassword.current.value)
 
         axios
-            .post("https://book-service-layer.herokuapp.com/user/register", formdata)
+            .post(
+                "https://book-service-layer.herokuapp.com/user/register",
+                formdata
+            )
             .then((data) => setToken(data.data))
-            .catch(err => console.log(err))
-    }
+            .catch((er) => console.log(er));
+    };
     return (
         <>
             <div className="container">
@@ -42,7 +44,7 @@ export const Register = () => {
                     <div className="register__right">
                         <h3>Sign up</h3>
                         <p>Already have an account? <Link to="/login">Sign in</Link></p>
-                        <form onClick={hanldeForm} className="register__form">
+                        <form onSubmit={hanldeForm} className="register__form">
                             <input ref={elUserName} type="text" placeholder="First name" />
                             <input ref={elLastName} type="text" placeholder="Last name" />
                             <input ref={elPhone} type="number" placeholder="Phone" />

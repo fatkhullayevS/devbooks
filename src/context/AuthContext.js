@@ -4,15 +4,15 @@ import { createContext, useState } from "react";
 export const AuthContext = createContext()
 
 export const AuthProvider = ({ children }) => {
-    const localData = window.localStorage.getItem("token")
-    const [token, setToken] = useState(localData)
-    // console.log(token);
+    const localData = JSON.parse(window.localStorage.getItem("token"))
+    const [token, setToken] = useState(localData || "")
+    console.log(token);
 
     useEffect(() => {
         if (token) {
-            window.localStorage.setItem("token", JSON.stringify(token))
+            localStorage.setItem("token", JSON.stringify(token))
         } else {
-            window.localStorage.removeItem("token")
+            localStorage.removeItem("token")
         }
     }, [token])
     return (
