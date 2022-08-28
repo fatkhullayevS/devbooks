@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState, useContext } from "react"
 import { Link, NavLink } from "react-router-dom"
 import "./header.css"
 import Strelka from "../../assets/img/strelka.svg"
@@ -6,9 +6,12 @@ import Logo from "../../assets/img/logo.svg"
 import { Select } from "../select/select"
 import axios from "axios"
 import { useAuth } from "../../hook/hook"
+import { Lang } from "../../Pages/Lang/Lang"
+import { LangContext } from "../../context/LangContext"
 export const Header = () => {
 
     const { token } = useAuth()
+    const { lang: til, } = useContext(LangContext)
     const [selectModal, setSelectModal] = useState(false)
     const [me, setMe] = useState({})
 
@@ -34,14 +37,14 @@ export const Header = () => {
                                     isActive
                                         ? "active-link d-inline-block"
                                         : "text-decoration-none"
-                                } to="/home">Bosh sahifa</NavLink>
+                                } to="/home">{Lang[til].homePage.home}</NavLink>
                             </li>
                             <li>
                                 <NavLink className={({ isActive }) =>
                                     isActive
                                         ? "active-link d-inline-block"
                                         : "text-decoration-none"
-                                } to="/books">Kitoblar</NavLink>
+                                } to="/books">{Lang[til].homePage.book}</NavLink>
                             </li>
                         </ul>
                     </nav>

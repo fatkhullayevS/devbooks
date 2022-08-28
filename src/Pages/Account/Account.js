@@ -1,14 +1,15 @@
-import { Link } from "react-router-dom"
 import "./account.css"
 import { SettingsNav } from "./settingsNav/settingsNav"
-import Brat from "../../assets/img/brat.png"
 import { useContext, useEffect, useRef } from "react"
 import axios from "axios"
 import { useAuth } from "../../hook/hook"
 import { useState } from "react"
 import { ThemeContext } from "../../context/ThemeContext"
+import { LangContext } from "../../context/LangContext"
+import { Lang } from "../Lang/Lang"
 export const Account = () => {
 
+    const { lang: til } = useContext(LangContext)
     const { theme, setTheme } = useContext(ThemeContext)
     const { token } = useAuth()
     const [me, setMe] = useState({})
@@ -52,19 +53,19 @@ export const Account = () => {
                         <img src={`https://book-service-layer.herokuapp.com/${me.image}`} alt="" width={175} height={175} />
                     </div>
                     <div className="col-9">
-                        <h3>My Profile</h3>
+                        <h3>{Lang[til].account.myprofile}</h3>
                         <form onSubmit={handleEdit} className="form-acc">
-                            <label className="d-block" htmlFor="FirtsName">First Name</label>
+                            <label className="d-block" htmlFor="FirtsName">{Lang[til].account.firstName}</label>
                             <input ref={elFirtsName} defaultValue={me.first_name} className="d-block input-acc" type="text" id="FirtsName" placeholder="Firts Name" />
                             <p>Please enter your first name.</p>
-                            <label className="d-block" htmlFor="LastName">Last Name</label>
+                            <label className="d-block" htmlFor="LastName">{Lang[til].account.lastName}</label>
                             <input ref={elLastName} defaultValue={me.last_name} className="d-block input-acc" type="text" id="LastName" placeholder="Last Name" />
                             <p>Please enter your last name.</p>
-                            <label className="d-block" htmlFor="Phone">Phone</label>
+                            <label className="d-block" htmlFor="Phone">{Lang[til].account.phone}</label>
                             <input ref={elPhone} defaultValue={me.phone} className="d-block input-acc" type="number" id="Phone" placeholder="Phone" />
                             <p>Please enter your  phone number.</p>
                             <input className="file-img" ref={elImage} type="file" />
-                            <button type="submit">Save Changes</button>
+                            <button type="submit">{Lang[til].account.button}</button>
                         </form>
                     </div>
                 </div>

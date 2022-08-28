@@ -1,5 +1,5 @@
 import axios from "axios"
-import { useState } from "react"
+import { useContext, useState } from "react"
 import { useEffect } from "react"
 import { Link, useParams } from "react-router-dom"
 import { Header } from "../../../components/Header/Header"
@@ -10,6 +10,8 @@ import Book from "../../../assets/img/book.svg"
 import Naushnik from "../../../assets/img/naushnik.svg"
 import Elek from "../../../assets/img/elek.svg"
 import { BookCard } from "../BookCard/BookCard"
+import { LangContext } from "../../../context/LangContext"
+import { Lang } from "../../Lang/Lang"
 
 
 export const SingleJadid = () => {
@@ -17,6 +19,7 @@ export const SingleJadid = () => {
     const [data, setData] = useState({})
     const [title, setTitle] = useState({})
     const [book, setBook] = useState({})
+    const { lang: til } = useContext(LangContext)
 
     console.log(title);
     const { id } = useParams()
@@ -58,17 +61,17 @@ export const SingleJadid = () => {
                             <p className="single__desc ms-2">{title?.last_name} <span className="ms-3">|</span></p>
                             <p className="single__desc ms-3">4.1</p>
                         </div>
-                        <p className="page pt-5">Sahifalar soni: <strong>{data.page}</strong></p>
-                        <p className="page pt-3">Chop etilgan: <strong>2021</strong></p>
-                        <p className="page pt-3">Janri: <strong>{data.genre_id === 2 ? "Jadid" : "hech nima"}</strong></p>
-                        <p className="page pt-3">Nashriyot:<strong> Qamar books: </strong></p>
+                        <p className="page pt-5">{Lang[til].singleBook.pages} <strong>{data.page}</strong></p>
+                        <p className="page pt-3">{Lang[til].singleBook.print} <strong>2021</strong></p>
+                        <p className="page pt-3">{Lang[til].singleBook.genre} <strong>{data.genre_id === 1 ? "temuriy" : "hech nima"}</strong></p>
+                        <p className="page pt-3">{Lang[til].singleBook.publisher} <strong> Qamar books: </strong></p>
                         <div className="d-flex pt-3">
-                            <p className="reseption">To'liq Ma'lumot</p>
+                            <p className="reseption">{Lang[til].singleBook.information}</p>
                             <img className="ms-3" src={Subtract} alt="" />
                         </div>
                         <hr />
                         <p className="desc">{data.description}</p>
-                        <p className="format">Mavjud formatlar</p>
+                        <p className="format">{Lang[til].singleBook.formats}</p>
                         <div className="d-flex align-items-center">
                             <div className="text-center">
                                 <img src={Book} alt="" width={24} height={24} />
@@ -91,8 +94,8 @@ export const SingleJadid = () => {
                 </div>
                 <div className="container">
                     <div className="d-flex mt-5 align-items-center justify-content-between">
-                        <h2 className="h2">Sizga yoqishi mumkin</h2>
-                        <Link className="text-decoration-none" to="/books">Barchasini ko'rish</Link>
+                        <h2 className="h2">{Lang[til].singleBook.liked}</h2>
+                        <Link className="text-decoration-none" to="/books">{Lang[til].singleAuthor.all}</Link>
                     </div>
                     <div className="container">
                         <div className="row">

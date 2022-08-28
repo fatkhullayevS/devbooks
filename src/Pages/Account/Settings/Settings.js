@@ -2,25 +2,31 @@ import './settings.css'
 import { useContext } from 'react'
 import { SettingsNav } from "../settingsNav/settingsNav"
 import { ThemeContext } from '../../../context/ThemeContext'
+import { LangContext } from '../../../context/LangContext'
+import { Lang } from '../../Lang/Lang'
 
 export const Settings = () => {
 
+    const { lang: til, setLang } = useContext(LangContext)
     const { theme, setTheme } = useContext(ThemeContext)
     return (
         <div className={`${theme} settings`}>
             <SettingsNav />
             <div className='container settings-container'>
-                <h3>Settings</h3>
+                <h3>{Lang[til].settings.heading}</h3>
                 <form className='form-settings'>
-                    <label htmlFor="select">Language</label><br />
-                    <select id="select" className='select-settings'>
-                        <option value="eng">English</option>
-                        <option value="uzb">uzbekistan</option>
-                        <option value="rus">Russian</option>
+                    <label htmlFor="select">{Lang[til].settings.language}</label><br />
+                    <select
+                        defaultValue={til}
+                        onChange={(evt) => {
+                            setLang(evt.target.value)
+                        }} id="select" className='select-settings'>
+                        <option value="uz">uzbekistan</option>
+                        <option value="en">English</option>
                     </select>
                     <p>Please enter your language.</p>
                     <div class="form-check form-switch">
-                        <label htmlFor="flexSwitchCheckDefault">Theme</label>
+                        <label htmlFor="flexSwitchCheckDefault">{Lang[til].settings.theme}</label>
                         <select
                             defaultValue={theme}
                             onChange={(evt) => {
@@ -30,7 +36,7 @@ export const Settings = () => {
                             <option value="dark">Dark</option>
                         </select>
                     </div>
-                    <button type='submit'>Save Changes</button>
+                    <button type='submit'>{Lang[til].account.button}</button>
                 </form>
             </div>
         </div>

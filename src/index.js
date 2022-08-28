@@ -5,13 +5,16 @@ import "./index.css"
 import { BrowserRouter as Router } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext';
 import { ThemeProvider } from './context/ThemeContext';
+import { LangProvider } from './context/LangContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <AuthProvider>
     <Router>
       <ThemeProvider>
-        <App />
+        <LangProvider>
+          <App />
+        </LangProvider>
       </ThemeProvider>
     </Router>
   </AuthProvider>
