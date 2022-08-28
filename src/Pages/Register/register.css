@@ -2,6 +2,11 @@
     display: flex;
 }
 
+.register-page{
+    background-color: white !important;
+    height: 700px !important;
+}
+
 .register__left {
     background-color: #C9AC8C;
     width: 576px;

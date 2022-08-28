@@ -1,45 +1,13 @@
-@font-face {
-    font-family: "Rotterburg Stylish FREE";
-    src: url("../../assets//fonts/Rotterburg\ Display\ Font.otf");
-}
-
-.home {
-    background-color: #191919;
-    width: 1600px;
-    height: 1493px;
-    margin: 0;
-    padding: 0;
-}
-
-.header{
-    padding: 22px 0;
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.sitenav ul {
-    display: flex;
-    list-style: none;
-    align-items: center;
-}
-
-.sitenav li {
-    margin-left: 33px;
-}
-
-.sitenav a {
-    text-decoration: none;
-    font-family:  sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 144.4%;
-    color: #FFFFFF;
-}
+/* .home-back{
+        background-color: #191919 !important;
+        width: 1600px;
+        height: 1493px;
+        margin: 0;
+        padding: 0;
+} */
 
 .hero{
-    margin-top: 54px;
+    margin-top: -1350px;
 }
 
 .hero__container{
@@ -79,4 +47,75 @@
     font-size: 31px;
     line-height: 34px;
     color: #C9AC8C;
+    margin-left: 507px;
+    padding-top: 39px;
+}
+.hero__form input {
+    width: 709px;
+    height: 47px;
+    border: none;
+    outline: none;
+    color: white;
+    background: #404040;
+    border-radius: 15px;
+    margin-left: 144px;
+    margin-top: 13px;
+}
+
+.hero__form button {
+    border: none;
+    background-color: #C9AC8C;
+    width: 160px;
+    height: 47px;
+    border-radius: 15px;
+    position: absolute;
+    margin-top: 13px;
+    margin-left: 14px;
+}
+.category{
+    margin-top: 147px;
+}
+
+.category h1 {
+    font-family: 'Rotterburg Stylish FREE';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 31px;
+    line-height: 34px;
+    color: #C9AC8C;
+    text-align: center;
+}
+
+.category__nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-left: 273px;
+}
+
+.category__nav li {
+    margin-left: 59px;
+}
+
+.category__nav a {
+    text-decoration: none;
+    font-family: 'Steinbeck';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.active-nav {
+    color: #C9AC8C !important;
+}
+
+.active-link{
+    border-bottom: 2px solid white;
+
+}
+
+.select{
+    cursor: pointer;
 }

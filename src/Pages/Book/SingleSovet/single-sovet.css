@@ -1,0 +1,120 @@
+.single-book__temuriy{
+    margin-top: -1300px;
+}
+
+.single__container{
+    display: flex;
+}
+
+.single__right{
+    margin-left: 55px;
+}
+
+.single__right h1 {
+    font-family: 'Rotterburg Stylish FREE';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 53px;
+    color: #C9AC8C;
+}
+
+.single__desc{
+    font-family: 'Steinbeck';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    color: #C9AC8C;
+}
+
+.page{
+    font-family: 'Steinbeck';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+hr{
+    color: white;
+    width: 700px;
+}
+
+.reseption{
+    font-family: 'Steinbeck';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #C9AC8C;
+    margin-top: 100px;
+}
+
+.d-flex img {
+    margin-top: 90px;
+}
+
+.desc{
+    font-family: 'Steinbeck';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 144.4%;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.format{
+    font-family: 'Steinbeck';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #C9AC8C;
+    margin-top: 36px;
+}
+
+.text-center h5{
+    font-family: 'Steinbeck';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+.text-center p {
+    font-family: 'Steinbeck';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.align-items-center button {
+    border: none;
+    width: 200px;
+    height: 48px;
+    background: #C9AC8C;
+    font-family: 'Steinbeck';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 16px;
+    color: #3C2710;
+    margin-top: 90px;
+    margin-left: 500px;
+    position: absolute;
+}
+
+.h2{
+    font-family: 'Steinbeck';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 25px;
+    color: #C9AC8C;
+}

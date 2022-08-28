@@ -1,0 +1,50 @@
+@font-face {
+    font-family: "Rotterburg Stylish FREE";
+    src: url("../../assets/fonts/Rotterburg\ Display\ Font.otf");
+}
+@font-face {
+    font-family: "Steinbeck";
+    src: url("../../assets//fonts/SteinbeckFC-Reg.otf");
+}
+
+.home__nav-link{
+    border-bottom: white;
+}
+
+.sitenav{
+    margin-left: 400px;
+}
+
+.header{
+    padding: 22px 0;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    justify-content: space-between;
+}
+
+.sitenav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.sitenav li {
+    margin-left: 33px;
+}
+
+.sitenav a {
+    text-decoration: none;
+    font-family:  sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 144.4%;
+    color: #FFFFFF;
+}
+
+.brat{
+    border-radius: 50%;
+    width: 49px !important;
+    height: 49px !important;
+}

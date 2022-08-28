@@ -1,0 +1,82 @@
+@font-face {
+    font-family: "Rotterburg Stylish FREE";
+    src: url("../../assets//fonts/Rotterburg\ Display\ Font.otf");
+}
+
+.home {
+    background-color: #191919;
+    width: 1600px;
+    height: 1493px !important;
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    padding: 22px 0;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sitenav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.sitenav li {
+    margin-left: 33px;
+}
+
+.sitenav a {
+    text-decoration: none;
+    font-family:  sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 144.4%;
+    color: #FFFFFF;
+}
+
+.hero{
+    margin-top: -1300px !important;
+}
+
+.hero__container{
+    background-image: url("../../assets/img/hero__back.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1261px;
+    height: 347px;
+}
+
+.hero__heading {
+    max-width: 337px;
+    margin-left: 86px;
+    font-family: 'Rotterburg Stylish FREE';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 61px;
+    line-height: 67px;
+    color: #C9AC8C;
+    padding-top: 45px;
+}
+
+.hero__search{
+    background: #191919;
+    box-shadow: 0px 4px 77px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    width: 1114px;
+    height: 169px;
+    margin-left: 76px;
+}
+
+.hero h3{
+    margin: 0;
+    font-family: 'Rotterburg Stylish FREE';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 31px;
+    line-height: 34px;
+    color: #C9AC8C;
+}

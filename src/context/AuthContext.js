@@ -1,11 +1,10 @@
-import { useEffect } from "react";
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 
 export const AuthContext = createContext()
 
 export const AuthProvider = ({ children }) => {
     const localData = JSON.parse(window.localStorage.getItem("token"))
-    const [token, setToken] = useState(localData || "")
+    const [token, setToken] = useState(localData || '')
     console.log(token);
 
     useEffect(() => {

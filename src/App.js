@@ -5,10 +5,11 @@ import { Public } from "./Pages/Public";
 import { Register } from "./Pages/Register/Register";
 
 function App() {
+  const { token } = useAuth()
   return (
     <>
-      <Private />
-      <Public />
+      {token ? <Private /> : <Public />}
+
     </>
   );
 }

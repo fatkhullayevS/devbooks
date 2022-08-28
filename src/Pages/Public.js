@@ -1,10 +1,12 @@
 import { Route, Routes } from "react-router-dom"
-import { Home } from "../components/Home/Home"
+import { Login } from "./Login/Login"
+import { Register } from "./Register/Register"
 
 export const Public = () => {
     return (
         <Routes>
-            <Route path="/home" element={<Home />} />
+            <Route index path="/register" element={<Register />} />
+            <Route path="/login" element={<Login />} />
         </Routes>
     )
 }

@@ -1,0 +1,76 @@
+.avloniy{
+    margin-left: 146px;
+    margin-top: 126px;
+}
+
+.author-add{
+    background-color: white !important;
+    /* width: 1000px !important; */
+    height: 1000px;
+}
+
+
+.files{
+    margin-left: -950px !important;
+    /* margin-top: 190px; */
+    position: absolute;
+    background-color: #152540;
+    border: none;
+    color: white;
+    width: 326px;
+    position: absolute;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.img-file{
+    cursor: pointer;
+}
+
+.col-6 h1{
+    margin-top: 31px;
+    margin-left: 108px;
+    font-family: 'Arial Black';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 51px;
+    color: #000000;
+}
+
+.input {
+    width: 330px;
+    height: 46px;
+    outline: none;
+    border: 1px solid #B4B4BB;
+    border-radius: 10px;
+    margin-left: 108px;
+    margin-top: 16px;
+}
+
+.textarea{
+    background: #FFFFFF;
+    border: 1px solid #B4B4BB;
+    border-radius: 10px;
+    width: 330px;
+    height: 82px;
+    margin-top: 16px;
+    outline: none;
+    margin-left: 108px;
+}
+
+.create-btn{
+    background: #152540;
+    border-radius: 99px;
+    width: 328px;
+    height: 46px;
+    color: white;
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 36px;
+    margin-top: 45px;
+    border: none;
+    margin-left: 108px;
+}

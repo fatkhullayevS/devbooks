@@ -1,0 +1,23 @@
+.select a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin: 10px;;
+}
+
+.big-select{
+    margin-top: 200px;
+    position: absolute;
+    left: 89%;
+    background-color: #191919;
+    border: 1px solid white;
+    border-radius: 8px;
+}
+
+.big-select button {
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}

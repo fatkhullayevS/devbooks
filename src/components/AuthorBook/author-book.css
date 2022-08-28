@@ -1,0 +1,41 @@
+.books-render{
+    background-color: #191919;
+    box-shadow: 0px 4px 77px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    margin-left: 97px;
+    width: 165px;
+    height: 302px;
+}
+
+.books-render h4{
+    margin-left: -1px !important;
+    font-family: 'Rotterburg Stylish FREE';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+    text-align: center;
+    color: #C9AC8C;
+    padding: 0;
+    margin: 0;
+}
+
+.books-render img{
+    border-radius: 15px;
+    width: 164px;
+    height: 230px;
+    margin-left: -1px !important;
+    margin-bottom: 17px !important;
+}
+
+.books-render span {
+    font-family: 'Steinbeck';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 144.4%;
+    color: rgba(255, 255, 255, 0.6);
+    margin-left: 35px;
+    padding: 0;
+    /* margin: 0; */
+}

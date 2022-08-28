@@ -1,16 +1,16 @@
 html {
-    overflow-y: hidden;
     overflow-x: hidden;
 }
 
 body {
     margin: 0;
+    background-color: #191919;
 }
 
-.container {
-    width: 100%;
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 0 20px;
-    padding: 0;
+.container{
+    width: 100% !important;
+    max-width: 1300px !important;
+    margin: 0 auto !important;
+    padding: 0 20px !important;
+    padding: 0 !important;
   }

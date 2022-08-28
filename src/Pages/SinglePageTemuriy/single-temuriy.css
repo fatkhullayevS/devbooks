@@ -1,0 +1,119 @@
+@font-face {
+    font-family: "Visuelt Pro";
+    src: url("../../assets/fonts/VisueltPro-Regular.ttf");
+}
+
+.single-author{
+    margin-top: -1100px;
+}
+
+.single-author img {
+    border-radius: 0px 50px 50px 0px;
+}
+
+.single-author__block h1 {
+    font-family: 'Rotterburg Stylish FREE';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 53px;
+    text-align: center;
+    color: #C9AC8C;
+    margin-left: 97px;
+}
+
+.single-author__block p {
+    font-family: 'Steinbeck';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 144.4%;
+    color: rgba(255, 255, 255, 0.8);
+    margin-left: 97px;
+    max-width: 671px;
+    padding: 0;
+}
+
+.single-author__block img {
+    margin-left: 80px;
+    width: 50px;
+    height: 19px;
+}
+
+.single-author__top h3{
+    font-family: 'Rotterburg Stylish FREE';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 31px;
+    line-height: 34px;
+    color: #C9AC8C;
+    margin-left: 97px;
+    margin-top: 115px;
+}
+
+.creativity{
+    margin-top: 304px;
+}
+
+.creativity h2 {
+    /* margin-top: -8px !important; */
+    margin: 0;
+    padding: 0;
+    font-family: 'Rotterburg Stylish FREE';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+    text-align: center;
+    color: #C9AC8C;
+}
+
+.single-author a {
+    text-decoration: none;
+    margin-top: 115px;
+    margin-left: 461px;
+}
+
+.book-render{
+    background-color: #191919;
+    box-shadow: 0px 4px 77px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    margin-left: 97px;
+    width: 165px;
+    height: 302px;
+}
+.birthday{
+    margin-top: 150px;
+    margin-left: -500px;
+}
+.birthday h5 {
+    font-family: 'Visuelt Pro';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 144.4%;
+    color: rgba(255, 255, 255, 0.6);
+}
+.birthday h2 {
+    font-family: 'Rotterburg Stylish FREE';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 39px;
+    line-height: 144.4%;
+    color: #C9AC8C;
+    text-align: center;
+}
+
+.birthday-right{
+    margin-left: 50px;
+}
+
+.single__desc{
+    font-family: 'Steinbeck';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    color: #C9AC8C;
+}
