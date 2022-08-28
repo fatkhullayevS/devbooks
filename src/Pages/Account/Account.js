@@ -2,11 +2,14 @@ import { Link } from "react-router-dom"
 import "./account.css"
 import { SettingsNav } from "./settingsNav/settingsNav"
 import Brat from "../../assets/img/brat.png"
-import { useEffect, useRef } from "react"
+import { useContext, useEffect, useRef } from "react"
 import axios from "axios"
 import { useAuth } from "../../hook/hook"
 import { useState } from "react"
+import { ThemeContext } from "../../context/ThemeContext"
 export const Account = () => {
+
+    const { theme, setTheme } = useContext(ThemeContext)
     const { token } = useAuth()
     const [me, setMe] = useState({})
 
@@ -41,7 +44,7 @@ export const Account = () => {
     }, [token])
 
     return (
-        <div className="account">
+        <div className={`${theme} account`}>
             <div className="container">
                 <SettingsNav />
                 <div className="row">
@@ -50,7 +53,7 @@ export const Account = () => {
                     </div>
                     <div className="col-9">
                         <h3>My Profile</h3>
-                        <form onSubmit={handleEdit} className="form">
+                        <form onSubmit={handleEdit} className="form-acc">
                             <label className="d-block" htmlFor="FirtsName">First Name</label>
                             <input ref={elFirtsName} defaultValue={me.first_name} className="d-block input-acc" type="text" id="FirtsName" placeholder="Firts Name" />
                             <p>Please enter your first name.</p>

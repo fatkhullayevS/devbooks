@@ -80,3 +80,7 @@
     line-height: 34px;
     color: #C9AC8C;
 }
+
+.dark {
+    background-color: white !important;
+}

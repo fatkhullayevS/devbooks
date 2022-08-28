@@ -4,12 +4,15 @@ import App from './App';
 import "./index.css"
 import { BrowserRouter as Router } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext';
+import { ThemeProvider } from './context/ThemeContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <AuthProvider>
     <Router>
-      <App />
+      <ThemeProvider>
+        <App />
+      </ThemeProvider>
     </Router>
   </AuthProvider>
 )

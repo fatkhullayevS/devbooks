@@ -23,3 +23,7 @@
 .active-settings{
     border-bottom: 1px solid #152540;
 }
+
+.dark a {
+    color: white;
+}

@@ -1,12 +1,15 @@
 import axios from "axios"
-import { useEffect } from "react"
+import { useContext, useEffect } from "react"
 import { useState } from "react"
 import { useRef } from "react"
+import { ThemeContext } from "../../../context/ThemeContext"
 import { useAuth } from "../../../hook/hook"
 import { SettingsNav } from "../settingsNav/settingsNav"
 import "./security.css"
 
 export const Security = () => {
+
+    const { theme, setTheme } = useContext(ThemeContext)
 
     const { token } = useAuth()
     const [me, setMe] = useState({})
@@ -46,7 +49,7 @@ export const Security = () => {
         }).then(data => setMe(data.data)).catch(err => console.log(err))
     }, [token])
     return (
-        <div className="security">
+        <div className={`${theme} security`}>
             <SettingsNav />
             <div className="container">
                 <h3>Change Or Recover Your Password:</h3>

@@ -1,7 +1,12 @@
+import { useContext } from "react"
 import { NavLink } from "react-router-dom"
+import { ThemeContext } from "../../../context/ThemeContext"
 import "./settings-nav.css"
 
 export const SettingsNav = () => {
+
+    const { theme, setTheme } = useContext(ThemeContext)
+
     return (
         <div className="container">
             <nav className="nav">

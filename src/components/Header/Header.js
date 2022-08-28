@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react"
 import { Link, NavLink } from "react-router-dom"
 import "./header.css"
-import SelectBrat from "../../assets/img/select-brat.png"
 import Strelka from "../../assets/img/strelka.svg"
 import Logo from "../../assets/img/logo.svg"
 import { Select } from "../select/select"
@@ -22,7 +21,7 @@ export const Header = () => {
     }, [token])
 
     return (
-        <div className="home">
+        <div className={`home`}>
             <div className="container home__container">
                 <header className="header">
                     <Link to="/">

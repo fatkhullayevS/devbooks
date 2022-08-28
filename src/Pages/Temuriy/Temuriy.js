@@ -1,8 +1,10 @@
+import axios from "axios"
 import { useEffect } from "react"
 import { useState } from "react"
-import { useParams } from "react-router-dom"
 import { Card } from "../../components/card/Card"
-import { Home } from "../../components/Home/Home"
+import { Category } from "../../components/Category/category"
+import { Header } from "../../components/Header/Header"
+import { Main } from "../../components/Main/Main"
 
 export const Temuriy = () => {
     const [temuriy, setTemuriy] = useState({})
@@ -16,7 +18,9 @@ export const Temuriy = () => {
     }, [])
     return (
         <>
-            <Home />
+            <Header />
+            <Main />
+            <Category />
             <div className="container">
                 <div className="row">
                     {temuriy.length && temuriy.map(e => (

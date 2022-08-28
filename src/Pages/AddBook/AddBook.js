@@ -9,7 +9,11 @@ export const AddBook = () => {
     const [temuriy, setTemuriy] = useState({})
 
     useEffect(() => {
-        fetch("https://book-service-layer.herokuapp.com/author/genreId/1")
+        fetch("https://book-service-layer.herokuapp.com/author/genreId/1", {
+            headers: {
+                Authorization: token.token
+            }
+        })
             .then(res => res.json())
             .then((data) => setTemuriy(data))
             .catch(err => console.log(err))
@@ -69,7 +73,12 @@ export const AddBook = () => {
                                     <option value="3">Sovet</option>
                                     <option value="4">Mustaqillik</option>
                                 </select>
-                                <input ref={elAuthor} className='d-block input' type="text" placeholder="Price" />
+                                <select ref={elAuthor} className='select d-block input'>
+                                    {temuriy.length && temuriy.map(e => (
+                                        <option value="1">{e.first_name}</option>
+                                    ))}
+                                </select>
+
                                 <textarea ref={elDescription} className="textarea" placeholder='bio'></textarea>
                                 <button className='files'><input ref={elImg} className="img-file" type="file" />upload cover</button>
                                 <button className='create-btn' type='submit'>Create</button>

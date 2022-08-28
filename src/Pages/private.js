@@ -24,6 +24,7 @@ import { SinglePageSovet } from "./SinglePageSovet/SinglePageSovet"
 import { SinglePageTemuriy } from "./SinglePageTemuriy/SinglePageTemuriy"
 import { Sovet } from "./Sovet/Sovet"
 import { Temuriy } from "./Temuriy/Temuriy"
+import { ThemeProvider } from "../context/ThemeContext"
 
 export const Private = () => {
     return (
