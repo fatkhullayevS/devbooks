@@ -38,7 +38,7 @@ export const Register = () => {
                 }
             })
             .catch((err) => console.log(err));
-        if (elPhone.current.value > 10) {
+        if (elPhone.current.value < 10) {
             alert("Telefon raqam 9 ta sondan iborat bo'lishi lozim")
         }
     };
